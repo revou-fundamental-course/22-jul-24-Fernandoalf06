@@ -111,7 +111,7 @@ header {
   max-width: 800px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 100 40px 100px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
   margin: auto;
 }
 
@@ -268,7 +268,7 @@ form button {
 
 .features p {
   padding-left: 20px;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "Poppins", Arial, sans-serif;
 }
@@ -314,11 +314,9 @@ form button {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .flex-section {
     flex-direction: column;
   }
-
   .flex-container {
     margin: 0 0 10px 0;
   }

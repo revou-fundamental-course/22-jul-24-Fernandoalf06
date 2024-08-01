@@ -1,190 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelEX</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <nav>
-    <div class="logo">
-        <h1><span class="travel">Travel</span><span class="highlight">EX</span></h1>
-    </div>
-    <ul>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1>
+          <span class="travel">Travel</span><span class="highlight">EX</span>
+        </h1>
+      </div>
+      <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#package">Our Package</a></li>
-        <li><a href="#contact">Call Us</a></li>
-    </ul>
-</nav>
+        <li><a href="#package">Our Packages</a></li>
+        <li><a href="#contact-form-container">Get in Touch</a></li>
+      </ul>
+    </nav>
 
-
-<section id="home" class="banner">
-  <div class="banner-content">
-      <h1>Your Best Travel <span class="highlight">EX</span>pert</h1>
-      <p>We provide everything for you</p>
-  </div>
-</section>
-
-
-    </header>
-    <!-- New Flex Section -->
-    <section class="flex-section">
-        <div class="flex-container left">
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide"><img src="assets/greece.jpg" alt="greece"></div>
-                    <div class="slide"><img src="assets/rome.jpg" alt="rome"></div>
-                    <div class="slide"><img src="assets/switzerland.jpg" alt="switzerland"></div>
-                    <div class="slide"><img src="assets/venice.jpg" alt="venice"></div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="flex-container right">
-            <section id="contact" class="contact">
-                <h2>Contact Us</h2>
-                <p>We will contact you 1x24 hours after we receive the data.</p>
-                <form id="contact-form">
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email address:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="interest">What are you interested in?</label>
-                    <select id="interest" name="interest">
-                        <option value="">Select option</option>
-                        <option value="package1">Package 1</option>
-                        <option value="package2">Package 2</option>
-                    </select>
-                    <button type="submit">SEND</button>
-                </form>
-            </section>
-            
-        </div>
+    <!-- Hero banner section -->
+    <section id="home" class="banner">
+      <div class="banner-content">
+        <h1>Your Best Travel <span class="highlight">EX</span>pert</h1>
+        <p>We take care of everything for you</p>
+      </div>
     </section>
 
-    <section id="package" class="package">
-        <div class="content">
-            <p>"Vacations are fun with my Travel Agent."</p>
-            <div class="author">
-                <img src="https://i.pinimg.com/564x/3b/82/bd/3b82bdaa67092b24a6fc96bf0e049178.jpg" alt="Florence Hughes">
-                <div>
-                    <p>Stacy</p>
-                    <p>worker, 28</p>
-                </div>
+    <!-- Flex Section -->
+    <section class="flex-section">
+      <div class="flex-container left">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="assets/greece.jpg" alt="Greece" />
             </div>
-            <div class="content">
-                <p>"Very satisfied with the service, cool"</p>
-                <div class="author">
-                    <img src="https://i.pinimg.com/564x/43/cc/94/43cc948fbad9cd318f960a4a3b350345.jpg" alt="Florence Hughes">
-                    <div>
-                        <p>James</p>
-                        <p>Investor, 25</p>
-                    </div>
-                </div>
-                <style>
-                    .features p {
-                        padding-left: 20px;
-                        font-size: 35px;
-                        font-weight: bold;
-                        margin-bottom: 20px; /* Jarak bawah dari paragraf */
-                    }
-                
-                    .features ol {
-                        padding-left: 20px; /* Jarak kiri dari list */
-                        list-style-type: none; /* Menghapus bullet points dari list */
-                        margin: 0; /* Menghapus margin default */
-                    }
-                
-                    .features li {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 20px; /* Jarak antar fitur secara vertikal */
-                    }
-                
-                    .features img {
-                        width: 60px; /* Sesuaikan ukuran sesuai kebutuhan */
-                        height: auto; /* Menjaga proporsi gambar */
-                        margin-right: 10px; /* Jarak antara gambar dan teks */
-                    }
-                
-                    .features span {
-                        font-size: 20px;
-                        color: #000000;
-                    }
-                </style>
-                <div class="features">
-                    <p>Mengapa harus memilih kami?</p>
-                    <ol>
-                        <li>
-                            <img src="https://ratumarmer.web.id/wp-content/uploads/2023/08/Icon-Terpercaya.png" alt="Feature 1">
-                            <span>Terpercaya</span>
-                        </li>
-                        <li>
-                            <img src="https://i.pinimg.com/564x/59/cc/ff/59ccff038d1c614f178135df8ed18053.jpg" alt="Feature 2">
-                            <span>Perjalanan Berkesan.</span>
-                        </li>
-                        <li>
-                            <img src="https://i.pinimg.com/564x/e0/99/6a/e0996abf2cc49d103bd7c5b8c6feed8d.jpg" alt="Feature 3">
-                            <span>Biaya Terjangkau.</span>
-                        </li>
-                    </ol>
-                </div>                
+            <div class="slide"><img src="assets/rome.jpg" alt="Rome" /></div>
+            <div class="slide">
+              <img src="assets/switzerland.jpg" alt="Switzerland" />
+            </div>
+            <div class="slide">
+              <img src="assets/venice.jpg" alt="Venice" />
+            </div>
+          </div>
         </div>
-        <section id="our-package">
-            <div class="container">
-                <h2>Our Package</h2>
-                <div class="packages">
-                    <div class="package">
-                        <img class="icon" src="https://i.pinimg.com/564x/0b/40/7f/0b407f324f3948b4b5878e834d4839a2.jpg" alt="Bali">
-                        <h3>Bali</h3>
-                        <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
-                    </div>
-                    <div class="package">
-                        <img class="icon" src="https://i.pinimg.com/564x/1a/fc/c9/1afcc9079228d8698d91364ed5b01883.jpg" alt="Lombok">
-                        <h3>Lombok</h3>
-                        <p>Travel dan wisata di Lombok. Kunjungi cagar budaya dan kuliner yang menarik.</p>
-                    </div>
-                    <div class="package">
-                        <img class="icon" src="https://i.pinimg.com/736x/94/66/1d/94661d0ac2d080fa6566459bac6fcfd6.jpg" alt="Brommo">
-                        <h3>Bromo</h3>
-                        <p>Travel dan wisata di Bromo. Kunjungi cagar budaya dan kuliner yang menarik.</p>
-                    </div>
-                    <div class="package">
-                        <img class="icon" src="https://i.pinimg.com/564x/53/d2/ed/53d2ed6f23a59a795169a790fe0d01c3.jpg" alt="Bandung">
-                        <h3>Bandung</h3>
-                        <p>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik.</p>
-                    </div>
-                    <div class="package">
-                        <img class="icon" src="https://i.pinimg.com/564x/0c/75/54/0c7554efc81935315bd9752ce3ef89c4.jpg" alt="Raja Ampat">
-                        <h3>Raja Ampat</h3>
-                        <p>Travel dan wisata di Raja Ampat. Kunjungi cagar budaya dan kuliner yang menarik.</p>
-                    </div>
-                    <div class="package">
-                        <img class="icon" src="https://i.pinimg.com/736x/59/bc/82/59bc8255cc1bdecfe37da71dc6d6aeaf.jpg" alt="Rinjani">
-                        <h3>Rinjani</h3>
-                        <p>Travel dan wisata di Rinjani. Kunjungi cagar budaya dan kuliner yang menarik.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="flex-container right">
+        <section id="contact-form-container" class="contact">
+          <h2>Contact Us</h2>
+          <p>
+            We will contact you within 24 hours after receiving your
+            information.
+          </p>
+          <form id="contact-form">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="interest">What are you interested in?</label>
+            <select id="interest" name="interest">
+              <option value="">Select option</option>
+              <option value="greece">Greece</option>
+              <option value="spain">Spain</option>
+              <option value="switzerland">Switzerland</option>
+              <option value="rome">Rome</option>
+              <option value="venice">Venice</option>
+              <option value="italy">Italy</option>
+            </select>
+            <button type="submit">Send</button>
+          </form>
         </section>
-        
-        <section id="closing-argument">
-            <div class="container">
-                <h2>Dapatkan penawaran spesial setiap harinya</h2>
-                <p>Jangan lewatkan kesempatan berkesan bersama kami.</p>
-                <button class="cta-button">CALL TO ACTION</button>
-            </div>
-        </section>
+      </div>
+    </section>
+
+    <!-- Package Section -->
+    <section id="package" class="package">
+      <div class="content">
+        <p>"Vacations are fun with my Travel Agent."</p>
+        <div class="author">
+          <img src="assets/stacy.jpg" alt="Stacy" />
+          <div>
+            <p>Stacy</p>
+            <p>Worker, 30</p>
+          </div>
+        </div>
+        <p>"Very satisfied with the service, cool"</p>
+        <div class="author">
+          <img src="assets/james.jpg" alt="James" />
+          <div>
+            <p>James</p>
+            <p>Investor, 22</p>
+          </div>
+        </div>
+        <div class="features">
+          <p>Why choose us?</p>
+          <ol>
+            <li><i data-feather="shield"></i> <span>Trusted</span></li>
+            <li>
+              <i data-feather="star"></i> <span>Impressive Experience</span>
+            </li>
+            <li>
+              <i data-feather="dollar-sign"></i> <span>Affordable Prices</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Package Section -->
+    <section id="our-package">
+      <div class="container">
+        <h2>Our Packages</h2>
+        <div class="packages">
+          <div class="package">
+            <img class="icon" src="assets/packgreece.jpg" alt="Greece" />
+            <h3>Greece</h3>
+            <p>
+              Greece's beaches feature crystal-clear turquoise waters, soft
+              golden sands, and scenic backdrops of rugged cliffs and charming
+              coastal villages.
+            </p>
+          </div>
+          <div class="package">
+            <img class="icon" src="assets/packrome.jpg" alt="Rome" />
+            <h3>Rome</h3>
+            <p>
+              Rome is a historic city known for its ancient ruins, such as the
+              Colosseum and the Roman Forum, its stunning Renaissance art and
+              architecture, and its vibrant culture and cuisine.
+            </p>
+          </div>
+          <div class="package">
+            <img
+              class="icon"
+              src="assets/packswitzerland.jpg"
+              alt="Switzerland"
+            />
+            <h3>Switzerland</h3>
+            <p>
+              Switzerland is renowned for its breathtaking alpine landscapes,
+              pristine lakes, and charming villages, as well as its high-quality
+              chocolate, precision engineering, and political neutrality.
+            </p>
+          </div>
+          <div class="package">
+            <img class="icon" src="assets/packvenice.jpg" alt="Venice" />
+            <h3>Venice</h3>
+            <p>
+              Venice is a unique city built on a network of canals, famous for
+              its historic architecture, picturesque gondola rides, and vibrant
+              cultural heritage, including landmarks like St. Mark's Basilica
+              and the Grand Canal.
+            </p>
+          </div>
+          <div class="package">
+            <img class="icon" src="assets/packitaly.jpg" alt="Italy" />
+            <h3>Italy</h3>
+            <p>
+              Italy is celebrated for its rich history, diverse landscapes, and
+              cultural heritage, offering everything from ancient ruins and
+              Renaissance art to stunning coastlines and renowned cuisine.
+            </p>
+          </div>
+          <div class="package">
+            <img class="icon" src="assets/packspain.jpg" alt="Spain" />
+            <h3>Spain</h3>
+            <p>
+              Spain is known for its lively culture, historic landmarks, and
+              diverse landscapes, featuring everything from vibrant cities like
+              Barcelona and Madrid to beautiful beaches and charming villages,
+              along with a rich tradition of art, music, and cuisine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Argument Section -->
+    <section id="closing-argument">
+      <div class="container">
+        <h2>Get The Best Offer Every Day</h2>
+        <p>Don't miss the opportunity with us</p>
+        <button class="cta-button">Call to Action</button>
+      </div>
+    </section>
+
+    <!-- Scripts -->
     <script src="js/script.js"></script>
-</body>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
