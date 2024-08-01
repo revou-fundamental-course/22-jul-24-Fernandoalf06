@@ -3,6 +3,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .icon {
@@ -142,8 +155,13 @@ nav {
     25,
     112,
     0.8
-  ); /* Warna background baru dengan opacity */
+  ); /* Warna background dengan opacity */
   border-bottom: 2px solid #1e90ff; /* Border bawah untuk navbar */
+  position: fixed; /* Tetap di posisi tetap saat scroll */
+  top: 0;
+  left: 0;
+  width: 100%; /* Lebar penuh */
+  z-index: 1000; /* Agar tetap di atas konten lain */
 }
 
 nav .logo {
