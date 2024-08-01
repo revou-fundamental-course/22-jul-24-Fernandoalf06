@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEX</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <h1><span class="travel">Travel</span><span class="highlight">EX</span></h1>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#package">Our Package</a></li>
+        <li><a href="#contact">Call Us</a></li>
+    </ul>
+</nav>
+
+
+<section id="home" class="banner">
+  <div class="banner-content">
+      <h1>Your Best Travel <span class="highlight">EX</span>pert</h1>
+      <p>We provide everything for you</p>
+  </div>
+</section>
+
+
+    </header>
+    <!-- New Flex Section -->
+    <section class="flex-section">
+        <div class="flex-container left">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="assets/greece.jpg" alt="greece"></div>
+                    <div class="slide"><img src="assets/rome.jpg" alt="rome"></div>
+                    <div class="slide"><img src="assets/switzerland.jpg" alt="switzerland"></div>
+                    <div class="slide"><img src="assets/venice.jpg" alt="venice"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex-container right">
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>We will contact you 1x24 hours after we receive the data.</p>
+                <form id="contact-form">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="interest">What are you interested in?</label>
+                    <select id="interest" name="interest">
+                        <option value="">Select option</option>
+                        <option value="package1">Package 1</option>
+                        <option value="package2">Package 2</option>
+                    </select>
+                    <button type="submit">SEND</button>
+                </form>
+            </section>
+            
+        </div>
+    </section>
+
+    <section id="package" class="package">
+        <div class="content">
+            <p>"Vacations are fun with my Travel Agent."</p>
+            <div class="author">
+                <img src="https://i.pinimg.com/564x/3b/82/bd/3b82bdaa67092b24a6fc96bf0e049178.jpg" alt="Florence Hughes">
+                <div>
+                    <p>Stacy</p>
+                    <p>worker, 28</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>"Very satisfied with the service, cool"</p>
+                <div class="author">
+                    <img src="https://i.pinimg.com/564x/43/cc/94/43cc948fbad9cd318f960a4a3b350345.jpg" alt="Florence Hughes">
+                    <div>
+                        <p>James</p>
+                        <p>Investor, 25</p>
+                    </div>
+                </div>
+                <style>
+                    .features p {
+                        padding-left: 20px;
+                        font-size: 35px;
+                        font-weight: bold;
+                        margin-bottom: 20px; /* Jarak bawah dari paragraf */
+                    }
+                
+                    .features ol {
+                        padding-left: 20px; /* Jarak kiri dari list */
+                        list-style-type: none; /* Menghapus bullet points dari list */
+                        margin: 0; /* Menghapus margin default */
+                    }
+                
+                    .features li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px; /* Jarak antar fitur secara vertikal */
+                    }
+                
+                    .features img {
+                        width: 60px; /* Sesuaikan ukuran sesuai kebutuhan */
+                        height: auto; /* Menjaga proporsi gambar */
+                        margin-right: 10px; /* Jarak antara gambar dan teks */
+                    }
+                
+                    .features span {
+                        font-size: 20px;
+                        color: #000000;
+                    }
+                </style>
+                <div class="features">
+                    <p>Mengapa harus memilih kami?</p>
+                    <ol>
+                        <li>
+                            <img src="https://ratumarmer.web.id/wp-content/uploads/2023/08/Icon-Terpercaya.png" alt="Feature 1">
+                            <span>Terpercaya</span>
+                        </li>
+                        <li>
+                            <img src="https://i.pinimg.com/564x/59/cc/ff/59ccff038d1c614f178135df8ed18053.jpg" alt="Feature 2">
+                            <span>Perjalanan Berkesan.</span>
+                        </li>
+                        <li>
+                            <img src="https://i.pinimg.com/564x/e0/99/6a/e0996abf2cc49d103bd7c5b8c6feed8d.jpg" alt="Feature 3">
+                            <span>Biaya Terjangkau.</span>
+                        </li>
+                    </ol>
+                </div>                
+        </div>
+        <section id="our-package">
+            <div class="container">
+                <h2>Our Package</h2>
+                <div class="packages">
+                    <div class="package">
+                        <img class="icon" src="https://i.pinimg.com/564x/0b/40/7f/0b407f324f3948b4b5878e834d4839a2.jpg" alt="Bali">
+                        <h3>Bali</h3>
+                        <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                    <div class="package">
+                        <img class="icon" src="https://i.pinimg.com/564x/1a/fc/c9/1afcc9079228d8698d91364ed5b01883.jpg" alt="Lombok">
+                        <h3>Lombok</h3>
+                        <p>Travel dan wisata di Lombok. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                    <div class="package">
+                        <img class="icon" src="https://i.pinimg.com/736x/94/66/1d/94661d0ac2d080fa6566459bac6fcfd6.jpg" alt="Brommo">
+                        <h3>Bromo</h3>
+                        <p>Travel dan wisata di Bromo. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                    <div class="package">
+                        <img class="icon" src="https://i.pinimg.com/564x/53/d2/ed/53d2ed6f23a59a795169a790fe0d01c3.jpg" alt="Bandung">
+                        <h3>Bandung</h3>
+                        <p>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                    <div class="package">
+                        <img class="icon" src="https://i.pinimg.com/564x/0c/75/54/0c7554efc81935315bd9752ce3ef89c4.jpg" alt="Raja Ampat">
+                        <h3>Raja Ampat</h3>
+                        <p>Travel dan wisata di Raja Ampat. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                    <div class="package">
+                        <img class="icon" src="https://i.pinimg.com/736x/59/bc/82/59bc8255cc1bdecfe37da71dc6d6aeaf.jpg" alt="Rinjani">
+                        <h3>Rinjani</h3>
+                        <p>Travel dan wisata di Rinjani. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="closing-argument">
+            <div class="container">
+                <h2>Dapatkan penawaran spesial setiap harinya</h2>
+                <p>Jangan lewatkan kesempatan berkesan bersama kami.</p>
+                <button class="cta-button">CALL TO ACTION</button>
+            </div>
+        </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

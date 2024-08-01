@@ -1,0 +1,325 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+  border-radius: 10px; /* Jika ingin gambar berbentuk bulat, sesuaikan dengan kebutuhan */
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 10px; /* Sesuaikan tinggi logo sesuai kebutuhan */
+  margin-top: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#our-package {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+#our-package h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.package {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.package .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.package h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.package p {
+  font-size: 1em;
+  color: #666;
+}
+
+#closing-argument {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+#closing-argument h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#closing-argument p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 100 40px 100px rgba(255, 255, 255, 0.1);
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Memisahkan logo dan menu nav */
+  padding: 10px;
+  background-color: rgba(
+    25,
+    25,
+    112,
+    0.8
+  ); /* Warna background baru dengan opacity */
+  border-bottom: 2px solid #1e90ff; /* Border bawah untuk navbar */
+}
+
+nav .logo {
+  margin-right: auto; /* Memindahkan logo ke kiri */
+}
+
+nav h1 {
+  font-size: 1.5em; /* Sesuaikan ukuran font sesuai kebutuhan */
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif; /* Menggunakan font Poppins */
+}
+
+nav h1 .travel {
+  color: white; /* Warna untuk Travel */
+}
+
+nav h1 .highlight {
+  color: #1e90ff; /* Warna untuk EX */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Menambahkan jarak antar item navbar */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px; /* Menghapus padding untuk background */
+  border-bottom: 2px solid transparent; /* Border bawah tanpa background */
+  transition: border-color 0.3s ease, color 0.3s ease; /* Transisi untuk border dan warna */
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #1e90ff; /* Border bawah saat hover */
+  color: #1e90ff; /* Warna teks saat hover */
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: #f0f0f0;
+  font-size: 25px;
+}
+
+.banner-content h1 {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Poppins", Arial, sans-serif; /* Menggunakan font Poppins */
+}
+
+.banner-content .highlight {
+  color: #1e90ff; /* Warna untuk bagian EX */
+}
+
+.banner-content p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins", Arial, sans-serif; /* Menggunakan font Poppins */
+}
+
+.flex-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #e0e0e0;
+}
+
+.flex-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.flex-container.left {
+  background: #b3b3b3;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.flex-container.right {
+  background: #c0c0c0;
+  margin-left: 0px;
+}
+
+.package,
+.contact {
+  padding: 50px 20px;
+}
+
+.contact {
+  background: #f9f9f9;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input,
+form select,
+form button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.features p {
+  padding-left: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.features ol {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Jarak antar fitur secara vertikal */
+}
+
+.features img {
+  margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.features span {
+  font-size: 20px;
+  color: #333;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flex-section {
+    flex-direction: column;
+  }
+
+  .flex-container {
+    margin: 0 0 10px 0;
+  }
+}
